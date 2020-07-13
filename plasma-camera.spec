@@ -1,7 +1,7 @@
 %define snapshot 20200710
 %define commit af2638fb6a1a1642a3b9b3320ca0ac352fdc0e78
 
-Name:		plasma-dialer
+Name:		plasma-camera
 Version:	1.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Camera app for Plasma Mobile
