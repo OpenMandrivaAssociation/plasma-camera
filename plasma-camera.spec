@@ -1,5 +1,5 @@
-%define snapshot 20200710
-%define commit af2638fb6a1a1642a3b9b3320ca0ac352fdc0e78
+%define snapshot 20201220
+%define commit c23e7911839cd1958dabad1e7f0ee4a8bc80a2cb
 
 Name:		plasma-camera
 Version:	1.0
@@ -37,5 +37,5 @@ Camera app for Plasma Mobile
 
 %files
 %{_bindir}/plasma-camera
-%{_datadir}/applications/org.kde.mobile.camera.desktop
-%{_datadir}/metainfo/org.kde.mobile.camera.appdata.xml
+%{_datadir}/applications/org.kde.plasma.camera.desktop
+%{_datadir}/metainfo/org.kde.plasma.camera.appdata.xml
