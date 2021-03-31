@@ -1,5 +1,5 @@
-%define snapshot 20201220
-%define commit c23e7911839cd1958dabad1e7f0ee4a8bc80a2cb
+%define snapshot 20210401
+%define commit 78c2e161c31b07be15f67c53bb556c3100a956b6
 
 Name:		plasma-camera
 Version:	1.0
