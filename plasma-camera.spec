@@ -23,6 +23,7 @@ BuildRequires:	cmake(KF6CoreAddons)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(PkgConfig)
+BuildRequires:	pkgconfig(exiv2)
 
 %description
 Camera app for Plasma Mobile
