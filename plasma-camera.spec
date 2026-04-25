@@ -1,11 +1,12 @@
-%define snapshot 20210401
-%define commit 78c2e161c31b07be15f67c53bb556c3100a956b6
+#define snapshot 20210401
+#define commit 78c2e161c31b07be15f67c53bb556c3100a956b6
 
 Name:		plasma-camera
-Version:	2.1.1
+Version:	26.04.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Camera app for Plasma Mobile
-Source0:	https://invent.kde.org/plasma-mobile/plasma-camera/-/archive/v%{version}/plasma-camera-v%{version}.tar.bz2
+# https://invent.kde.org/plasma-mobile/plasma-camera
+Source0:	https://download.kde.org/stable/release-service/%{version}/src/plasma-camera-%{version}.tar.xz
 License:	GPLv3
 Group:		Applications/Productivity
 BuildSystem:	cmake
