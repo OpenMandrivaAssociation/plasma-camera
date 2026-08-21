@@ -2,7 +2,7 @@
 #define commit 78c2e161c31b07be15f67c53bb556c3100a956b6
 
 Name:		plasma-camera
-Version:	26.04.0
+Version:	26.08.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	Camera app for Plasma Mobile
 # https://invent.kde.org/plasma-mobile/plasma-camera
