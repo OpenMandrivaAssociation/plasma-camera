@@ -1,0 +1,554 @@
+warning: Downloading https://download.kde.org/stable/release-service/26.04.0/src/plasma-camera-26.04.0.tar.xz to /home/bero/abf/plasma-camera/plasma-camera-26.04.0.tar.xz
+Reading /var/tmp/rpm-tmp.zpN5zj
+Executing(%mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.eF2Kax
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.O3G4WX
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ rm -rf plasma-camera-26.04.0
++ /usr/lib/rpm/rpmuncompress -x -C plasma-camera-26.04.0 /home/bero/abf/plasma-camera/plasma-camera-26.04.0.tar.xz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd plasma-camera-26.04.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%generate_buildrequires): /bin/sh -e /var/tmp/rpm-tmp.CLEylO
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ cd plasma-camera-26.04.0
++ echo cmake
++ CMAKE_GENERATOR=
++ ARG_IS_GENERATOR=false
++ '[' '' = 'Unix Makefiles' ']'
++ echo ninja
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%conf): /bin/sh -e /var/tmp/rpm-tmp.qlDYTO
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ cd plasma-camera-26.04.0
++ CMAKE_BUILD_DIR=_OMV_rpm_build
++ CMAKE_GENERATOR=
++ EXTRA_ARGS=
++ ARG_IS_GENERATOR=false
++ '[' -z '' ']'
++ CMAKE_GENERATOR=Ninja
++ EXTRA_ARGS=' -G Ninja'
++ CC=/usr/bin/cc
++ export CC
++ CXX=/usr/bin/c++
++ export CXX
++ CFLAGS='-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto'
++ export CFLAGS
++ CXXFLAGS='-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto'
++ export CXXFLAGS
++ FFLAGS='-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -I/usr/lib64/gfortran/modules'
++ export FFLAGS
++ FCFLAGS='-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -I/usr/lib64/gfortran/modules'
++ export FCFLAGS
++ LDFLAGS='-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -Wl,--no-undefined -flto '
++ export LDFLAGS
++ LT_SYS_LIBRARY_PATH=/usr/lib64:
++ export LT_SYS_LIBRARY_PATH
++ CROSSCOMPILE='--target=x86_64-openmandriva-linux-gnu --build=x86_64-openmandriva-linux-gnu'
++ export CROSSCOMPILE
++ mkdir -p _OMV_rpm_build
++ cd _OMV_rpm_build
++ CROSSCOMPILE=
++ export CROSSCOMPILE
++ /usr/bin/cmake .. -DCMAKE_SKIP_RPATH:BOOL=ON -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=lib64 -DCMAKE_INSTALL_SBINDIR:PATH=bin -DCMAKE_INSTALL_DO_STRIP:BOOL=OFF -DLIB_INSTALL_DIR:PATH=lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DCMAKE_BUILD_TYPE=RelWithDebInfo -DOpenGL_GL_PREFERENCE=GLVND -DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON -DLIB_SUFFIX=64 -DCMAKE_SKIP_RPATH:BOOL=ON -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF '-DCMAKE_C_FLAGS=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto' '-DCMAKE_C_FLAGS_RELEASE=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -DNDEBUG' '-DCMAKE_C_FLAGS_RELWITHDEBINFO=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto' '-DCMAKE_CXX_FLAGS=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto' '-DCMAKE_CXX_FLAGS_RELEASE=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -DNDEBUG' '-DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto' '-DCMAKE_EXE_LINKER_FLAGS=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -Wl,--no-undefined -flto ' '-DCMAKE_SHARED_LINKER_FLAGS=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -Wl,--no-undefined -flto ' '-DCMAKE_MODULE_LINKER_FLAGS=-Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -flto' -G Ninja
+-- The C compiler identification is Clang 22.1.4
+-- The CXX compiler identification is Clang 22.1.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:26 (include)
+
+
+CMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:26 (include)
+
+
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+CMake Warning at /usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitImplpluginTargets.cmake:117 (message):
+  The imported target "Qt6::LabsStyleKitImplplugin" references the file
+
+     "/usr/lib64/qt6/qml/Qt/labs/StyleKit/impl/liblabsstylekitimplplugin.so"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "/usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitImplpluginTargets.cmake"
+
+  but not all the files it references.
+
+  * The installation package was intentionally split into smaller
+
+    components, and "/usr/lib64/qt6/qml/Qt/labs/StyleKit/impl/liblabsstylekitimplplugin.so"
+    is part of an optional subpackage. This is generally harmless
+    and known to happen on e.g. the static libraries when only
+    shared libraries are being used - but if you see an actual
+    error after seeing this message, you might want to make sure
+    the optional file is installed by running
+    sudo dnf --refresh install "/usr/lib64/qt6/qml/Qt/labs/StyleKit/impl/liblabsstylekitimplplugin.so"
+
+Call Stack (most recent call first):
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitImplpluginConfig.cmake:56 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:638 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/Qt6QmlPlugins.cmake:6 (__qt_internal_include_qml_plugin_packages)
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake:209 (include)
+  /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/qt6/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)
+  /usr/lib64/qt6/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:50 (_qt_internal_find_qt_dependencies)
+  /usr/lib64/qt6/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:50 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6/Qt6Config.cmake:256 (find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+CMake Warning at /usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginTargets.cmake:117 (message):
+  The imported target "Qt6::LabsStyleKitplugin" references the file
+
+     "/usr/lib64/qt6/qml/Qt/labs/StyleKit/liblabsstylekitplugin.so"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "/usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginTargets.cmake"
+
+  but not all the files it references.
+
+  * The installation package was intentionally split into smaller
+
+    components, and "/usr/lib64/qt6/qml/Qt/labs/StyleKit/liblabsstylekitplugin.so"
+    is part of an optional subpackage. This is generally harmless
+    and known to happen on e.g. the static libraries when only
+    shared libraries are being used - but if you see an actual
+    error after seeing this message, you might want to make sure
+    the optional file is installed by running
+    sudo dnf --refresh install "/usr/lib64/qt6/qml/Qt/labs/StyleKit/liblabsstylekitplugin.so"
+
+Call Stack (most recent call first):
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginConfig.cmake:56 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:638 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/Qt6QmlPlugins.cmake:6 (__qt_internal_include_qml_plugin_packages)
+  /usr/lib64/qt6/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake:209 (include)
+  /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/qt6/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)
+  /usr/lib64/qt6/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:50 (_qt_internal_find_qt_dependencies)
+  /usr/lib64/qt6/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:50 (include)
+  /usr/lib64/qt6/lib/cmake/Qt6/Qt6Config.cmake:256 (find_package)
+  CMakeLists.txt:37 (find_package)
+
+
+-- Found OpenMP_C: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP: TRUE (found version "5.1")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.25.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.25.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.24")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.25.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: Kirigami CoreAddons I18n Config
+-- Found LibExiv2: /usr/lib64/libexiv2.so (found version "0.28.8")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.1.1")
+-- Checking for module 'libcamera'
+--   Found libcamera, version 0.7.0
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Vulkan
+ * WrapVulkanHeaders
+ * Qt6Test (required version >= 6.6.0)
+ * Qt6Svg (required version >= 6.6.0)
+ * Qt6QuickControls2 (required version >= 6.6.0)
+ * Qt6Sensors (required version >= 6.6.0)
+ * Qt6GuiTools (required version >= 6.11.0)
+ * Qt6WidgetsTools (required version >= 6.11.0)
+ * Qt6Widgets (required version >= 6.6.0)
+ * Qt6Core (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.0)
+ * Qt6QuickTools (required version >= 6.11.0)
+ * Qt6Quick (required version >= 6.9.0)
+ * Qt6CoreTools (required version >= 6.11.0)
+ * Qt6DBusTools (required version >= 6.11.0)
+ * Qt6Multimedia
+ * PkgConfig
+ * Git
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.0.0)
+ * KF6Kirigami (required version >= 6.0.0)
+ * KF6CoreAddons (required version >= 6.0.0)
+ * Gettext
+ * KF6I18n (required version >= 6.0.0)
+ * KF6Config (required version >= 6.0.0)
+ * KF6 (required version >= 6.0.0)
+ * LibExiv2, Image metadata support, <https://www.exiv2.org>
+ * Qt6
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.11.0)
+
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_INSTALL_DO_STRIP
+    CMAKE_VERBOSE_MAKEFILE
+    LIB_SUFFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build
++ cd ..
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.yKXmVP
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ cd plasma-camera-26.04.0
++ /usr/bin/cmake --build _OMV_rpm_build
+Change Dir: '/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build'
+
+Run Build Command(s): /usr/bin/ninja -v
+[1/17] cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src && /usr/lib64/libexec/kf6/kconfig_compiler_kf6 /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/camerasettings.kcfg /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/camerasettings.kcfgc -d /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/
+[2/17] cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build && /usr/bin/cmake -DPython3_EXECUTABLE=/usr/bin/python3 -D_ki18n_pmap_compile_script=/usr/lib64/cmake/KF6I18n/ts-pmap-compile.py -DCOPY_TO=/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/locale -DPO_DIR=/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/po -P /usr/lib64/cmake/KF6I18n/build-tsfiles.cmake
+[3/17] cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build && /usr/bin/cmake -DGETTEXT_MSGFMT_EXECUTABLE=/usr/bin/msgfmt -DCOPY_TO=/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/locale -DPO_DIR=/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/po -P /usr/lib64/cmake/KF6I18n/build-pofiles.cmake
+[4/17] cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src && /usr/bin/cmake -E cmake_autogen /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/CMakeFiles/plasma-camera_autogen.dir/AutogenInfo.json RelWithDebInfo && /usr/bin/cmake -E touch /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/deps /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/CMakeFiles/d/44d22b3cb2d39de2772429b1ca8c79abb3782c0add3c1299e2ffc2566425b0ce.d
+[5/17] cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src && /usr/bin/cmake -E cmake_autorcc /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/CMakeFiles/plasma-camera_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json RelWithDebInfo
+[6/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/EWIEGA46WW/qrc_resources.cpp
+[7/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera/converter.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera/converter.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera/converter.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera/converter.cpp
+[8/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera/image.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera/image.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera/image.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera/image.cpp
+[9/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera/path.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera/path.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera/path.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera/path.cpp
+[10/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera/settings.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera/settings.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera/settings.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera/settings.cpp
+[11/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/camerasettings.cpp.o -MF src/CMakeFiles/plasma-camera.dir/camerasettings.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/camerasettings.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/camerasettings.cpp
+[12/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera/worker.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera/worker.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera/worker.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera/worker.cpp
+[13/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/main.cpp.o -MF src/CMakeFiles/plasma-camera.dir/main.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/main.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/main.cpp
+[14/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacamera.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacamera.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacamera.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacamera.cpp
+[15/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasmacameramanager.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasmacameramanager.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasmacameramanager.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacameramanager.cpp
+/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src/plasmacameramanager.cpp:550:23: warning: 'mirrored' is deprecated: Use flipped(Qt::Orientations) instead [-Wdeprecated-declarations]
+  550 |         image = image.mirrored(); // Deprecated, replace with image.flipped() once we are on Qt 6.9
+      |                       ^
+/usr/lib64/qt6/include/QtGui/qimage.h:219:5: note: 'mirrored' has been explicitly marked deprecated here
+  219 |     QT_DEPRECATED_VERSION_X_6_13("Use flipped(Qt::Orientations) instead")
+      |     ^
+/usr/lib64/qt6/include/QtCore/qtdeprecationmarkers.h:246:45: note: expanded from macro 'QT_DEPRECATED_VERSION_X_6_13'
+  246 | # define QT_DEPRECATED_VERSION_X_6_13(text) QT_DEPRECATED_X(text)
+      |                                             ^
+/usr/lib64/qt6/include/QtCore/qtdeprecationmarkers.h:30:33: note: expanded from macro 'QT_DEPRECATED_X'
+   30 | #  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+      |                                 ^
+/usr/lib64/qt6/include/QtCore/qcompilerdetection.h:1017:36: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+ 1017 | #  define Q_DECL_DEPRECATED_X(x) [[deprecated(x)]]
+      |                                    ^
+1 warning generated.
+[16/17] /usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_CAST_TO_ASCII -DQT_NO_DEBUG -DQT_NO_FOREACH -DQT_NO_KEYWORDS -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_NO_URL_CAST_FROM_STRING -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_SENSORS_LIB -DQT_STRICT_ITERATORS -DQT_SVG_LIB -DQT_USE_QSTRINGBUILDER -DQT_WIDGETS_LIB -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/src -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/include -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0 -I/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build -isystem /usr/include/libcamera -isystem /usr/lib64/qt6/include/QtCore -isystem /usr/lib64/qt6/include -isystem /usr/lib64/qt6/mkspecs/linux-clang -isystem /usr/lib64/qt6/include/QtQml -isystem /usr/lib64/qt6/include/QtQmlIntegration -isystem /usr/lib64/qt6/include/QtNetwork -isystem /usr/lib64/qt6/include/QtQuick -isystem /usr/lib64/qt6/include/QtGui -isystem /usr/lib64/qt6/include/QtOpenGL -isystem /usr/lib64/qt6/include/QtSvg -isystem /usr/lib64/qt6/include/QtSensors -isystem /usr/lib64/qt6/include/QtMultimedia -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KConfigCore -isystem /usr/lib64/qt6/include/QtWidgets -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -std=c++20 -fvisibility=hidden -fvisibility-inlines-hidden -fexceptions -fPIC -ffunction-sections -fdata-sections -MD -MT src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/mocs_compilation.cpp.o -MF src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/mocs_compilation.cpp.o.d -o src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/mocs_compilation.cpp.o -c /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0/_OMV_rpm_build/src/plasma-camera_autogen/mocs_compilation.cpp
+[17/17] : && /usr/bin/c++ -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -fno-operator-names -fno-exceptions -Wno-gnu-zero-variadic-macro-arguments -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Werror=undef -Wvla -Wdate-time -pedantic -Wzero-as-null-pointer-constant -fdiagnostics-color=always -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,--enable-new-dtags -Os -fomit-frame-pointer -g3 -gdwarf-4 -Wstrict-aliasing=2 -pipe -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fstack-protector-all --param=ssp-buffer-size=4 -O3 -m64 -march=znver1 -mtune=znver1 -mmmx -msse -msse2 -mssse3 -msse4a -msse4.1 -msse4.2 -mavx -mavx2 -msha -maes -mclflushopt -mfsgsbase -mrdrnd -mfma -mrdseed -mpopcnt -madx -mbmi -mbmi2 -mfxsr -mxsave -mxsaveopt -mxsavec -mxsaves -mmwaitx -mclzero -mfpmath=sse -flto -Wl,-O2  -Wl,--no-undefined -flto -Wl,--gc-sections src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/mocs_compilation.cpp.o src/CMakeFiles/plasma-camera.dir/main.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacameramanager.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera/converter.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera/image.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera/path.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera/settings.cpp.o src/CMakeFiles/plasma-camera.dir/plasmacamera/worker.cpp.o src/CMakeFiles/plasma-camera.dir/camerasettings.cpp.o src/CMakeFiles/plasma-camera.dir/plasma-camera_autogen/EWIEGA46WW/qrc_resources.cpp.o -o bin/plasma-camera  /usr/lib64/qt6/lib/libQt6Quick.so.6.11.0  /usr/lib64/qt6/lib/libQt6Svg.so.6.11.0  /usr/lib64/qt6/lib/libQt6Sensors.so.6.11.0  /usr/lib64/qt6/lib/libQt6Multimedia.so.6.11.0  /usr/lib64/libKF6CoreAddons.so.6.25.0  /usr/lib64/libKF6I18n.so.6.25.0  /usr/lib64/libKF6ConfigGui.so.6.25.0  /usr/lib64/libexiv2.so  /usr/lib64/qt6/lib/libQt6Widgets.so.6.11.0  /usr/lib64/qt6/lib/libQt6OpenGL.so.6.11.0  /usr/lib64/qt6/lib/libQt6Qml.so.6.11.0  /usr/lib64/qt6/lib/libQt6Network.so.6.11.0  /usr/lib64/libKF6ConfigCore.so.6.25.0  /usr/lib64/qt6/lib/libQt6Gui.so.6.11.0  /usr/lib64/libGLX.so  /usr/lib64/libOpenGL.so  /usr/lib64/qt6/lib/libQt6Core.so.6.11.0  /usr/lib64/libcamera.so  /usr/lib64/libcamera-base.so  -Wl,-rpath-link,/usr/lib64/qt6/lib && :
+
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.PNrwwo
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ /usr/bin/rm -rf /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT
++ /usr/bin/mkdir -p /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ /usr/bin/mkdir /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT
++ cd plasma-camera-26.04.0
++ DESTDIR=/home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT
++ /usr/bin/cmake --install _OMV_rpm_build
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/bin/plasma-camera
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ar
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ar/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/az
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/az/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/bg
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/bg/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca@valencia
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ca@valencia/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/cs
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/cs/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/da
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/da/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/de
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/de/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/el
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/el/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/en_GB
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/en_GB/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eo/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/es
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/es/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/et
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/et/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eu
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/eu/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fi
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fi/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fr
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/fr/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ga
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ga/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/gl
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/gl/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/he
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/he/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hi
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hi/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hu
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/hu/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ia
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ia/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/id
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/id/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/is
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/is/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/it
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/it/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ja
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ja/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ka
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ka/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ko
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ko/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lt
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lt/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lv
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/lv/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nl
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nl/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nn
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/nn/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pa
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pa/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pl
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pl/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt_BR
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/pt_BR/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ro
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ro/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ru
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/ru/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sa
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sa/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sk
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sk/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sl
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sl/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sv
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/sv/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/tr
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/tr/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/uk
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/uk/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_CN
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_CN/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_TW
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/locale/zh_TW/LC_MESSAGES/plasma-camera.mo
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/applications/org.kde.plasma.camera.desktop
+-- Installing: /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT/usr/share/metainfo/org.kde.plasma.camera.appdata.xml
++ /usr/lib/rpm/find-lang.sh /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT plasma-camera --all-name --with-qt --with-html --with-man
++ /usr/bin/find-debuginfo -j32 -m -i --build-id-seed 26.04.0-1 --unique-debug-suffix -26.04.0-1.x86_64 --unique-debug-src-base plasma-camera-26.04.0-1.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/plasma-camera-26.04.0
+find-debuginfo: starting
+
+Extracting debug info from 1 files
+DWARF-compressing 1 files
+sepdebugcrcfix: Updated 1 CRC32s, 0 CRC32s did match.
+Creating .debug symlinks for symlinks to ELF files
+Copying sources found by 'debugedit -l' to /usr/src/debug/plasma-camera-26.04.0-1.x86_64
+find-debuginfo: done
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ COMPRESS='zstd -f --rm -19 -T0'
++ COMPRESS_EXT=.zst
++ /usr/lib/rpm/brp-compress
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_xdg
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_file_permissions
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pkgconfig
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_libtool_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_rpath
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_lto_intermediates_in_static_libraries
++ '[' 1 -eq 1 ']'
++ /usr/lib/rpm/brp-python-bytecompile '' 0 ''
++ /usr/lib/rpm/brp-python-hardlink
+Reading /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/SPECPARTS/rpm-debuginfo.specpart
+Processing files: plasma-camera-26.04.0-1.znver1
+Provides: application() application(org.kde.plasma.camera.desktop) metainfo() metainfo(org.kde.plasma.camera.appdata.xml) plasma-camera = 26.04.0-1 plasma-camera(x86-64) = 26.04.0-1
+Requires(rpmlib): rpmlib(LargeFiles) <= 4.12.0-1
+Requires: libKF6ConfigCore.so.6()(64bit) libKF6ConfigGui.so.6()(64bit) libKF6CoreAddons.so.6()(64bit) libKF6I18n.so.6()(64bit) libQt6Core.so.6()(64bit) libQt6Core.so.6(Qt_6)(64bit) libQt6Gui.so.6()(64bit) libQt6Gui.so.6(Qt_6)(64bit) libQt6Multimedia.so.6()(64bit) libQt6Multimedia.so.6(Qt_6)(64bit) libQt6Qml.so.6()(64bit) libQt6Qml.so.6(Qt_6)(64bit) libQt6Sensors.so.6()(64bit) libQt6Sensors.so.6(Qt_6)(64bit) libQt6Widgets.so.6()(64bit) libQt6Widgets.so.6(Qt_6)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.32)(64bit) libc.so.6(GLIBC_2.34)(64bit) libc.so.6(GLIBC_2.4)(64bit) libcamera-base.so.0.7()(64bit) libcamera.so.0.7()(64bit) libexiv2.so.28()(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(CXXABI_1.3.9)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) rtld(GNU_HASH)
+Processing files: plasma-camera-debugsource-26.04.0-1.znver1
+Provides: plasma-camera-debugsource = 26.04.0-1 plasma-camera-debugsource(x86-64) = 26.04.0-1
+Requires(rpmlib): rpmlib(LargeFiles) <= 4.12.0-1
+Processing files: plasma-camera-debuginfo-26.04.0-1.znver1
+Provides: debuginfo(build-id) = 7acac8759978aa333a374de329d51bb161d7f507 plasma-camera-debuginfo = 26.04.0-1 plasma-camera-debuginfo(x86-64) = 26.04.0-1
+Requires(rpmlib): rpmlib(LargeFiles) <= 4.12.0-1
+Recommends: plasma-camera-debugsource(x86-64) = 26.04.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build/BUILDROOT
+Wrote: /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-26.04.0-1-omv2690.znver1.rpm
+Wrote: /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-debugsource-26.04.0-1-omv2690.znver1.rpm
+Wrote: /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-debuginfo-26.04.0-1-omv2690.znver1.rpm
+Executing "/usr/bin/rpmlint  /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-26.04.0-1-omv2690.znver1.rpm /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-debugsource-26.04.0-1-omv2690.znver1.rpm /home/bero/abf/plasma-camera/RPMS/znver1/plasma-camera-debuginfo-26.04.0-1-omv2690.znver1.rpm ":
+(none): W: unable to load spellchecking dictionary for en_US.
+(none): W: unable to load spellchecking dictionary for en_US.
+(none): W: unable to load spellchecking dictionary for en_US.
+(none): W: unable to load spellchecking dictionary for en_US.
+(none): W: unable to load spellchecking dictionary for en_US.
+(none): W: unable to load spellchecking dictionary for en_US.
+============================ rpmlint session starts ============================
+rpmlint: 2.8.0
+configuration:
+    /usr/lib/python3.14/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/licenses.toml
+    /etc/xdg/rpmlint/openmandriva.toml
+checks: 30, packages: 3
+
+plasma-camera.znver1: W: no-url-tag
+plasma-camera-debuginfo.znver1: W: no-url-tag
+plasma-camera-debugsource.znver1: W: no-url-tag
+plasma-camera.znver1: W: no-manual-page-for-binary plasma-camera
+ 3 packages and 0 specfiles checked; 0 errors, 4 warnings, 16 filtered, 0 badness; has taken 0.2 s 
+Executing(rmbuild): /bin/sh -e /var/tmp/rpm-tmp.2nLUkQ
++ umask 022
++ cd /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ test -d /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ rm -rf /home/bero/abf/plasma-camera/BUILD/plasma-camera-26.04.0-build
++ RPM_EC=0
+++ jobs -p
++ exit 0
+
+RPM build warnings:
+    Downloading https://download.kde.org/stable/release-service/26.04.0/src/plasma-camera-26.04.0.tar.xz to /home/bero/abf/plasma-camera/plasma-camera-26.04.0.tar.xz
